@@ -1,4 +1,4 @@
-package cmsc495;
+package net.jar.Controller;
 
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpServletRequest;
