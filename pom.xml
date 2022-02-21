@@ -4,9 +4,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>CMSC495</groupId>
-  <artifactId>myRxJSP</artifactId>
-  <version>0.4</version>
+  <groupId>net</groupId>
+  <artifactId>jar</artifactId>
+  <version>0.1</version>
   <packaging>war</packaging>
   <name>${project.artifactId.version}</name>
 
@@ -18,16 +18,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>5.3.13</version>
-    </dependency>
-    <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
-      <version>8.0.5</version>
-      <scope>system</scope>
-      <systemPath>/opt/tomee/lib/javaee-api-8.0-5-tomcat.jar</systemPath>
+      <version>8.0.1</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -60,16 +53,12 @@
     <dependency>
       <groupId>com.sun.faces</groupId>
       <artifactId>jsf-api</artifactId>
-      <version>2.3.9</version>
-      <scope>system</scope>
-      <systemPath>/opt/tomee/lib/myfaces-api-2.3.9.jar</systemPath>
+      <version>2.2.20</version>
     </dependency>
     <dependency>
       <groupId>com.sun.faces</groupId>
       <artifactId>jsf-impl</artifactId>
-      <version>2.3.9</version>
-      <scope>system</scope>
-      <systemPath>/opt/tomee/lib/myfaces-impl-2.3.9.jar</systemPath>
+      <version>2.2.20</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -77,20 +66,10 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.xerial</groupId>
-      <artifactId>sqlite-jdbc</artifactId>
-      <version>3.36.0.3</version>
-    </dependency>
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.27</version>
-    </dependency>
   </dependencies>
 
   <build>
-    <finalName>myRxJSP-${version}</finalName>
+    <finalName>${project.artifactId.version}</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
