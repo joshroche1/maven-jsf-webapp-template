@@ -1,5 +1,0 @@
-net/jar/login/Controller/AuthorizationFilter.class
-net/jar/login/Controller/DAOlogin.class
-net/jar/login/Controller/SessionUtils.class
-example/Example.class
-net/jar/login/Model/User.class
